@@ -3,10 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="siyujie-contact-endpoint" content="">
   <title>思愈界 · 祝福妙香珠 | 慈莲如意</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500&family=Noto+Serif+SC:wght@400;600;700&family=Cormorant+Garamond:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=Noto+Sans+SC:wght@300;400;500&family=Noto+Serif+SC:wght@400;600;700&family=Cormorant+Garamond:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
   <style>
     *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
     :root{
@@ -102,45 +103,15 @@
     .pillar-icon{font-size:2rem;margin-bottom:16px}
     .pillar-title{font-family:'Noto Serif SC',serif;font-size:1.05rem;font-weight:600;margin-bottom:8px}
     .pillar-text{font-size:.82rem;color:var(--text-muted);line-height:1.8}
-    .cta-section{background:linear-gradient(135deg,rgba(201,169,110,0.05),rgba(139,168,136,0.03));border:1px solid var(--border-subtle);border-radius:24px;padding:56px 40px;text-align:center;position:relative;overflow:hidden}
-    .cta-section::before{content:'';position:absolute;top:-100%;left:-100%;width:300%;height:300%;background:radial-gradient(ellipse at center,rgba(201,169,110,0.05) 0%,transparent 50%);animation:pulse-g 10s ease-in-out infinite}
-    @keyframes pulse-g{0%,100%{transform:scale(1) rotate(0deg)}50%{transform:scale(1.2) rotate(180deg)}}
-    .cta-title{font-family:'Noto Serif SC',serif;font-size:1.8rem;font-weight:600;letter-spacing:.06em;margin-bottom:8px;position:relative}
-    .cta-sub{font-size:.85rem;color:var(--text-muted);margin-bottom:36px;position:relative}
-    .form-row{display:grid;gap:16px;margin-bottom:16px;position:relative}
-    .form-input{width:100%;background:rgba(255,255,255,0.04);border:1px solid var(--border-subtle);border-radius:var(--radius-sm);padding:16px;color:var(--text-primary);font-family:'Noto Sans SC',sans-serif;font-size:.95rem;transition:all .3s ease;outline:none}
-    .form-input:focus{border-color:var(--accent-gold);background:rgba(201,169,110,0.04);box-shadow:0 0 0 3px rgba(201,169,110,0.08)}
-    .form-input::placeholder{color:var(--text-faint)}
-    .form-submit{width:100%;background:linear-gradient(135deg,var(--accent-gold),#b8935a);color:var(--bg-deep);border:none;border-radius:var(--radius-sm);padding:18px;font-family:'Noto Sans SC',sans-serif;font-size:.95rem;font-weight:500;letter-spacing:.12em;cursor:pointer;transition:all .3s ease;position:relative;margin-top:8px}
-    .form-submit:hover{transform:translateY(-2px);box-shadow:0 12px 30px rgba(201,169,110,0.35)}
-    .form-submit:disabled{opacity:.6;cursor:not-allowed}
-    .form-success{text-align:center;padding:40px;animation:hero-in .6s ease-out}
-    .success-icon{font-size:3.5rem;margin-bottom:16px}
-    .success-title{font-family:'Noto Serif SC',serif;font-size:1.4rem;color:var(--accent-gold);margin-bottom:8px}
-    .success-sub{font-size:.85rem;color:var(--text-muted)}
     .footer{text-align:center;padding:80px 20px 60px;border-top:1px solid var(--border-subtle)}
     .footer-brand{font-family:'Noto Serif SC',serif;font-size:.9rem;color:var(--text-muted);letter-spacing:.1em;margin-bottom:6px}
     .footer-tagline{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:.8rem;color:var(--text-faint)}
     .safe-bottom{height:env(safe-area-inset-bottom,24px)}
-    .qr-row{display:flex;gap:16px;align-items:center;justify-content:center;margin-top:24px;position:relative;flex-wrap:wrap}
-    .qr-mini{width:120px;height:120px;background:rgba(201,169,110,0.06);border:1px dashed rgba(201,169,110,0.3);border-radius:12px;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:4px;color:var(--text-faint);font-size:.7rem;cursor:pointer;transition:all .3s;overflow:hidden;position:relative;text-align:center}
-    .qr-mini:hover{border-color:rgba(201,169,110,0.5);background:rgba(201,169,110,0.08)}
-    .qr-mini.has-image{border-style:solid;border-color:var(--accent-gold);background:#fff}
-    .qr-mini img{width:100%;height:100%;object-fit:contain}
-    .qr-hint{font-size:.7rem;color:var(--text-faint);margin-top:8px;width:100%;text-align:center}
-    @media (max-width:480px){.product-3d-grid{grid-template-columns:repeat(2,1fr);gap:14px}.card-3d-wrapper{height:300px}.card-back{padding:14px}.cta-section{padding:40px 24px}}
+    .provenance-section{padding:110px 0 140px}.provenance-wrap{max-width:760px;margin:0 auto;border-top:1px solid rgba(201,169,110,.42);border-bottom:1px solid rgba(201,169,110,.42);padding:58px 0}.provenance-heading{text-align:center;font-family:'Ma Shan Zheng','Noto Serif SC',serif;font-size:clamp(3.2rem,8vw,5.2rem);font-weight:400;letter-spacing:.16em;line-height:1;margin:0 0 34px}.provenance-lead{font-family:'Noto Serif SC',serif;font-size:1.02rem;line-height:2.1;color:var(--text-primary);text-align:center;margin:0 auto 34px;max-width:610px}.provenance-detail{font-family:'Noto Serif SC',serif;font-size:.88rem;line-height:2.15;color:var(--text-muted);max-width:660px;margin:0 auto;text-align:center}.provenance-detail p{margin:0 0 24px}.provenance-motto{text-align:center;font-family:'Ma Shan Zheng','Noto Serif SC',serif;font-size:clamp(1.45rem,3vw,1.85rem);font-weight:400;letter-spacing:.2em;color:var(--accent-gold);margin:38px 0 0}
+    @media (max-width:760px){.provenance-section{padding:70px 0 110px}.provenance-wrap{padding:40px 0}.provenance-lead{font-size:.91rem}.provenance-detail{text-align:left;font-size:.8rem}.provenance-motto{font-size:.95rem}}
+    @media (max-width:480px){.product-3d-grid{grid-template-columns:repeat(2,1fr);gap:14px}.card-3d-wrapper{height:300px}.card-back{padding:14px}}
     @media (hover:none){.card-3d-wrapper.tapped .card-3d{transform:rotateY(180deg)}}
   
-    .compliance-section{padding:80px 0}
-    .compliance-card{max-width:640px;margin:0 auto;background:linear-gradient(160deg,rgba(201,169,110,0.06),rgba(139,168,136,0.03));border:1px solid rgba(201,169,110,0.25);border-radius:20px;padding:44px 36px 36px;position:relative}
-    .compliance-card::before{content:'\26A0';position:absolute;top:-18px;left:50%;transform:translateX(-50%);width:36px;height:36px;border-radius:50%;background:var(--bg-deep);border:1px solid rgba(201,169,110,0.4);display:flex;align-items:center;justify-content:center;font-size:.9rem;color:var(--accent-gold)}
-    .compliance-title{text-align:center;font-family:'Noto Serif SC',serif;font-size:1.2rem;font-weight:600;letter-spacing:.08em;margin-bottom:22px;color:var(--accent-gold)}
-    .compliance-list{list-style:none;display:flex;flex-direction:column;gap:12px}
-    .compliance-list li{font-size:.82rem;color:var(--text-muted);line-height:1.85;padding-left:18px;position:relative}
-    .compliance-list li::before{content:'\00B7';position:absolute;left:4px;color:var(--accent-gold)}
-    .card-warn{margin-top:10px;font-size:.68rem;color:#e0a0a0;background:rgba(224,160,160,0.08);border:1px solid rgba(224,160,160,0.22);border-radius:6px;padding:7px 10px;letter-spacing:.02em;line-height:1.5}
-    @media (max-width:480px){.compliance-card{padding:40px 22px 28px}}
-
   
     .detail-modal{position:fixed;inset:0;z-index:1000;display:none;align-items:center;justify-content:center;padding:20px}
     .detail-modal.open{display:flex}
@@ -243,88 +214,35 @@
     </div>
   </div>
 </section>
-<section class="section story-section" id="story">
-  <div class="container">
-    <div class="section-header">
-      <span class="section-tag">Philosophy</span>
-      <h2 class="section-title">何为合香</h2>
-      <p class="section-sub">合诸香之灵，成一味禅意</p>
+<template data-archived-module="contact">
+  <div class="container contact-grid">
+    <div class="offline-copy">
+      <div class="offline-label">MEET US OFFLINE</div>
+      <h2 class="offline-title">在市集，闻见这一串香。</h2>
+      <p>试闻、聊天、慢慢选。每个线下点位由自己的摊主接待，方便后续持续为你推荐新香。</p>
+      <div class="location-note"><b id="contactLocation">当前点位：请向现场摊主扫码</b><span id="contactLocationHint">扫码添加本点位摊主微信，获取试香与新品提醒。</span></div>
     </div>
-    <p class="story-intro">
-      植根古方药理，融合现代生物低温提香工艺，<br>
-      首创花材、香材、本草药材三合一合香体系。<br>
-      守古法、遵药理、合天时、融佛道、精科技。
-    </p>
-    <div class="story-pillars">
-      <div class="pillar-card">
-        <div class="pillar-icon">🏔️</div>
-        <h3 class="pillar-title">严选原产地</h3>
-        <p class="pillar-text">越南芽庄沉香、富森红土、菩萨棋、印度迈索尔老山檀，山野原生花草药材，顺二十四节气采料。</p>
-      </div>
-      <div class="pillar-card">
-        <div class="pillar-icon">⚗️</div>
-        <h3 class="pillar-title">古法炮制</h3>
-        <p class="pillar-text">君臣佐使古法配伍，浸润、阴干、酵制等传统炮制工艺，规避高温损毁成分，保留天然灵性。</p>
-      </div>
-      <div class="pillar-card">
-        <div class="pillar-icon">✨</div>
-        <h3 class="pillar-title">生物科技</h3>
-        <p class="pillar-text">十余年自研提香/扩香/固香技术，沸点梯度分布，分级冷磨高频复筛，琥珀与枫香脂结构定香。</p>
-      </div>
-      <div class="pillar-card">
-        <div class="pillar-icon">🕉️</div>
-        <h3 class="pillar-title">佛道加持</h3>
-        <p class="pillar-text">道医团队把关，融道家闻香服气养生；大悲寺大德禅师指点，融正统藏药合香古法。</p>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="section" id="contact">
-  <div class="container">
     <div class="cta-section">
       <h2 class="cta-title">与有缘人结一份清香</h2>
       <p class="cta-sub">留下联系方式，静候结缘</p>
-      <form id="contactForm">
-        <div class="form-row">
-          <input type="text" class="form-input" id="nameInput" placeholder="您的称呼" maxlength="20">
-        </div>
-        <div class="form-row">
-          <input type="text" class="form-input" id="wechatInput" placeholder="微信 / 手机 *" required>
-        </div>
+      <form id="contactForm" novalidate>
+        <div class="form-row"><input type="text" class="form-input" id="nameInput" placeholder="您的称呼" maxlength="20" autocomplete="name"></div>
+        <div class="form-row"><input type="text" class="form-input" id="wechatInput" placeholder="微信 / 手机 *" required autocomplete="tel"></div>
         <button type="submit" class="form-submit" id="submitBtn">发送结缘请求</button>
       </form>
-      <div class="form-success" id="formSuccess" style="display:none">
-        <div class="success-icon">✨</div>
-        <div class="success-title">缘已结，静候佳音</div>
-        <div class="success-sub">感谢您的信任，我们会尽快与您联系</div>
-      </div>
-      <div class="qr-row" id="qrRow">
-        <div class="qr-mini" id="qrZone">
-          <div id="qrPlaceholder">
-            <div style="font-size:1.5rem;margin-bottom:4px">📱</div>
-            <div>点击上传</div>
-            <div>微信二维码</div>
-          </div>
-          <img id="qrPreview" style="display:none">
-        </div>
-        <input type="file" id="qr-input" accept="image/*" style="display:none">
-        <p class="qr-hint" id="qrHint">扫码直接加摊主微信</p>
-      </div>
+      <p class="form-error" id="formError" role="alert" hidden></p>
+      <div class="form-success" id="formSuccess" style="display:none"><div class="success-icon">✨</div><div class="success-title">缘已结，静候佳音</div><div class="success-sub">感谢您的信任，我们会尽快与你联系</div></div>
+      <div id="qrRow" hidden><div id="qrZone"></div><input id="qr-input" type="file"><img id="qrPreview"><span id="qrPlaceholder"></span><span id="qrHint"></span></div>
     </div>
   </div>
-</section>
-<section class="section compliance-section" id="compliance">
-  <div class="container">
-    <div class="compliance-card">
-      <div class="compliance-title">温馨提示 · 使用须知</div>
-      <ul class="compliance-list">
-        <li>本产品为天然香材合香手串，仅供佩戴与闻香养生之用，<b style="color:var(--text-primary)">非药品，不替代医疗诊断与治疗</b>。</li>
-        <li>孕妇及哺乳期妇女、婴幼儿、过敏体质者请勿佩戴。</li>
-        <li>含 <b style="color:var(--accent-gold)">麝香</b>（人生四喜、朱颜丹）、<b style="color:var(--accent-gold)">人工麝香</b>（息肌丸）、<b style="color:var(--accent-gold)">朱砂</b>（九紫离火）成分，孕期及备孕期间禁用。</li>
-        <li>佩戴中若出现皮肤红痒等不适，请立即停用并咨询专业医师。</li>
-      </ul>
-    </div>
-  </div>
+</template>
+<section class="provenance-section" id="provenance">
+  <div class="container"><div class="provenance-wrap">
+    <h2 class="provenance-heading">「根基」</h2>
+    <p class="provenance-lead">这一切的发心，始于与僧众的共愿。因此，我们郑重承诺：</p>
+    <div class="provenance-detail"><p>场域与加持：所有手作产品（中药合香香牌、手串等）的核心部分，均在寺内依古法完成制作，将物理空间的精神场域转化为可随身携带的安心陪伴。</p><p>收益与功德：品牌每获得一份支持，都会将其中的 30% 捐赠给公益。你的每一次参与，都是一份可追溯、有回响的切实功德。</p></div>
+    <p class="provenance-motto">向内扎根｜向外绽放</p>
+  </div></div>
 </section>
 <footer class="footer">
   <p class="footer-brand">慈莲如意 · 思愈界合香</p>
@@ -372,7 +290,7 @@
   </div>
 </div>
 
-<script src="new_products.js"></script>
+<script src="new_products.js?v=20260729"></script>
 <script>
 let currentFragrance = '全部';
 function createParticles(){
@@ -409,51 +327,10 @@ document.getElementById('fragranceNav').addEventListener('click',function(e){
     renderProducts();
   }
 });
-document.getElementById('contactForm').addEventListener('submit',function(e){
-  e.preventDefault();
-  const name=document.getElementById('nameInput').value.trim()||'有缘人';
-  const wechat=document.getElementById('wechatInput').value.trim();
-  if(!wechat){document.getElementById('wechatInput').focus();return}
-  const btn=document.getElementById('submitBtn');
-  btn.textContent='结缘中...';btn.disabled=true;
-
-  // ====== 推送到 PushPlus（摊主微信即时接收） ======
-  const now=new Date();
-  const timeStr=now.getFullYear()+'-'+(now.getMonth()+1)+'-'+now.getDate()+' '+now.getHours()+':'+(now.getMinutes()<10?'0':'')+now.getMinutes();
-  const source=location.pathname.split('/').pop()||'思愈界官网';
-  const title='🌸 新结缘 · '+name;
-  const content='<h3>有新的客户留资</h3>'
-    +'<p><b>称呼：</b>'+name+'</p>'
-    +'<p><b>微信/手机：</b>'+wechat+'</p>'
-    +'<p><b>提交时间：</b>'+timeStr+'</p>'
-    +'<p><b>来源页面：</b>'+source+'</p>'
-    +'<p style="color:#888;font-size:12px;margin-top:12px;">—— 来自思愈界官网结缘表单</p>';
-
-  fetch('https://www.pushplus.plus/send',{
-    method:'POST',
-    headers:{'Content-Type':'application/json'},
-    body:JSON.stringify({
-      token:FORM_CONFIG.pushplusToken,
-      title:title,
-      content:content,
-      template:'html'
-    })
-  }).then(function(res){return res.json();}).then(function(data){
-    console.log('PushPlus 返回：',data);
-    showSuccess();
-  }).catch(function(err){
-    console.warn('PushPlus 推送失败：',err);
-    // 即使推送失败也显示成功，不影响顾客体验；摊主可在控制台查看
-    showSuccess();
-  });
-
-  function showSuccess(){
-    btn.style.display='none';
-    document.getElementById('formSuccess').style.display='block';
-    document.getElementById('qrRow').style.display='none';
-  }
-});
-document.getElementById('qrZone').addEventListener('click',function(){document.getElementById('qr-input').click()});
+/* Archived contact and QR handlers. The full working-state source is retained in backups.
+var qrZone=document.getElementById('qrZone');
+if(qrZone){
+qrZone.addEventListener('click',function(){document.getElementById('qr-input').click()});
 document.getElementById('qr-input').addEventListener('change',function(e){
   const file=e.target.files[0];if(!file)return;
   const reader=new FileReader();
@@ -464,8 +341,59 @@ document.getElementById('qr-input').addEventListener('change',function(e){
     document.getElementById('qrZone').classList.add('has-image');
     document.getElementById('qrHint').textContent='已上传，可点击更换';
   };
-  reader.readAsDataURL(file);
+reader.readAsDataURL(file);
 });
+}
+(function configureContactForm(){
+  var originalForm=document.getElementById('contactForm');
+  if(!originalForm){return;}
+  var form=originalForm.cloneNode(true);
+  originalForm.replaceWith(form);
+  var errorBox=document.getElementById('formError');
+  var successBox=document.getElementById('formSuccess');
+  var button=document.getElementById('submitBtn');
+
+  function showError(message){
+    errorBox.textContent=message;
+    errorBox.hidden=false;
+    button.disabled=false;
+    button.textContent='发送结缘请求';
+  }
+
+  function requestConfig(config,name,contact){
+    var source=location.href;
+    if(!config.endpoint){throw new Error('联系服务地址未配置。');}
+    return {url:config.endpoint,body:{name:name,contact:contact,source:source,submittedAt:new Date().toISOString()}};
+  }
+
+  form.addEventListener('submit',function(event){
+    event.preventDefault();
+    var name=document.getElementById('nameInput').value.trim()||'有缘人';
+    var contact=document.getElementById('wechatInput').value.trim();
+    if(!contact){document.getElementById('wechatInput').focus();showError('请填写微信或手机号。');return;}
+    var endpointMeta=document.querySelector('meta[name="siyujie-contact-endpoint"]');
+    var config=window.SIYUJIE_FORM_CONFIG||(endpointMeta&&endpointMeta.content?{endpoint:endpointMeta.content.trim()}:null);
+    if(!config){showError('结缘服务尚未配置，请直接向现场摊主咨询。');return;}
+    var request;
+    try{request=requestConfig(config,name,contact);}catch(error){showError(error.message);return;}
+    errorBox.hidden=true;
+    button.disabled=true;
+    button.textContent='正在发送…';
+    fetch(request.url,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(request.body)})
+      .then(function(response){
+        if(!response.ok){throw new Error('提交服务返回 '+response.status+'。');}
+        return response.json();
+      })
+      .then(function(data){
+        var accepted=data&&(data.success===true||data.status==='success'||data.code===0||data.code===200);
+        if(!accepted){throw new Error((data&&data.message)||'提交服务未确认接收。');}
+        form.style.display='none';
+        successBox.style.display='block';
+      })
+      .catch(function(error){showError('提交未成功：'+error.message);});
+  });
+})();
+*/
 createParticles();
 renderProducts();
 document.addEventListener('keydown',function(e){
