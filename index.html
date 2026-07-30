@@ -2,12 +2,13 @@
 <html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="siyujie-contact-endpoint" content="">
   <title>思愈界 · 祝福妙香珠 | 慈莲如意</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=Noto+Sans+SC:wght@300;400;500&family=Noto+Serif+SC:wght@400;600;700&family=Cormorant+Garamond:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="brand-framework.css">
   <style>
     *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
     :root{
@@ -110,7 +111,7 @@
     .provenance-section{padding:110px 0 140px}.provenance-wrap{max-width:760px;margin:0 auto;border-top:1px solid rgba(201,169,110,.42);border-bottom:1px solid rgba(201,169,110,.42);padding:58px 0}.provenance-heading{text-align:center;font-family:'Ma Shan Zheng','Noto Serif SC',serif;font-size:clamp(3.2rem,8vw,5.2rem);font-weight:400;letter-spacing:.16em;line-height:1;margin:0 0 34px}.provenance-lead{font-family:'Noto Serif SC',serif;font-size:1.02rem;line-height:2.1;color:var(--text-primary);text-align:center;margin:0 auto 34px;max-width:610px}.provenance-detail{font-family:'Noto Serif SC',serif;font-size:.88rem;line-height:2.15;color:var(--text-muted);max-width:660px;margin:0 auto;text-align:center}.provenance-detail p{margin:0 0 24px}.provenance-motto{text-align:center;font-family:'Ma Shan Zheng','Noto Serif SC',serif;font-size:clamp(1.45rem,3vw,1.85rem);font-weight:400;letter-spacing:.2em;color:var(--accent-gold);margin:38px 0 0}
     @media (max-width:760px){.provenance-section{padding:70px 0 110px}.provenance-wrap{padding:40px 0}.provenance-lead{font-size:.91rem}.provenance-detail{text-align:left;font-size:.8rem}.provenance-motto{font-size:.95rem}}
     @media (max-width:480px){.product-3d-grid{grid-template-columns:repeat(2,1fr);gap:14px}.card-3d-wrapper{height:300px}.card-back{padding:14px}}
-    @media (hover:none){.card-3d-wrapper.tapped .card-3d{transform:rotateY(180deg)}}
+    @media (hover:none){.card-3d-wrapper.tapped .card-3d{transform:rotateY(180deg)}.card-flip-hint{opacity:.9}}
   
   
     .detail-modal{position:fixed;inset:0;z-index:1000;display:none;align-items:center;justify-content:center;padding:20px}
@@ -161,6 +162,13 @@
 <div class="particles-container" id="particles"></div>
 <div class="glow-orb glow-orb-1"></div>
 <div class="glow-orb glow-orb-2"></div>
+<header class="brand-frame">
+  <div class="brand-frame__inner">
+    <a class="brand-frame__home" href="https://siyujie.fun">思<span>愈</span>界</a>
+    <span class="brand-frame__series">五行经典</span>
+    <a class="brand-frame__advisor" href="https://siyujie.fun/advisor/?from=%E4%BA%94%E8%A1%8C%E7%BB%8F%E5%85%B8&amp;return=https%3A%2F%2Fsiyujie.online">AI 选香</a>
+  </div>
+</header>
 <section class="hero">
   <svg class="hero-logo" viewBox="0 0 100 100" fill="none">
     <circle cx="50" cy="50" r="46" stroke="#c9a96e" stroke-width="0.5" opacity="0.3"/>
@@ -244,6 +252,14 @@
     <p class="provenance-motto">向内扎根｜向外绽放</p>
   </div></div>
 </section>
+<section class="advisor-module" aria-labelledby="advisor-title">
+  <div>
+    <p class="advisor-module__eyebrow">AI SCENT GUIDE</p>
+    <h2 class="advisor-module__title" id="advisor-title">从五行与日常节奏出发，找到适合你的那一串香。</h2>
+    <p class="advisor-module__copy">AI 会先了解你的使用场景、香韵偏好与当下状态，再从四大系列中给出有限、清晰的建议。</p>
+  </div>
+  <a class="advisor-module__action" href="https://siyujie.fun/advisor/?from=%E4%BA%94%E8%A1%8C%E7%BB%8F%E5%85%B8&amp;return=https%3A%2F%2Fsiyujie.online">开始 AI 选香</a>
+</section>
 <footer class="footer">
   <p class="footer-brand">慈莲如意 · 思愈界合香</p>
   <p class="footer-tagline">"A scent, a blessing, a connection."</p>
@@ -252,11 +268,11 @@
 
 <nav class="nav-bar">
   <div class="nav-links">
-    <a href="http://siyujie.fun" class="nav-link"><span class="nav-icon">🏠</span><span>首页</span></a>
-    <a href="https://siyujie.online" class="nav-link active"><span class="nav-icon">🌀</span><span>五行经典</span></a>
-    <a href="https://siyujie.xyz" class="nav-link"><span class="nav-icon">🌸</span><span>四季果香</span></a>
-    <a href="https://siyujie.shop" class="nav-link"><span class="nav-icon">☯️</span><span>道系灵山</span></a>
-    <a href="https://end-dmpxo.art" class="nav-link"><span class="nav-icon">🌺</span><span>十二花神</span></a>
+    <a href="https://siyujie.fun" class="nav-link"><span>首页</span></a>
+    <a href="https://siyujie.online" class="nav-link active"><span>五行经典</span></a>
+    <a href="https://siyujie.xyz" class="nav-link"><span>四季果香</span></a>
+    <a href="https://siyujie.shop" class="nav-link"><span>道系灵山</span></a>
+    <a href="https://end-dmpxo.art" class="nav-link"><span>十二花神</span></a>
   </div>
 </nav>
 
